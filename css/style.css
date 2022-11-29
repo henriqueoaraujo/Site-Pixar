@@ -47,6 +47,7 @@ a {
 .menu ul ul {
     visibility: hidden;
     position: absolute;
+    display: inline-block;
 }
 
 .menu ul a {
@@ -60,7 +61,51 @@ a {
     color: #c2c2c2;
 }
 
+/* Submenu*/ 
+.menu ul  li:hover ul{
+    visibility: visible;
+    background-color: #1d1d1d;
+    top: 25;
+    transition: .35s;
+}
+
+.menu ul ul li a{
+    display: block;
+    color: white;
+}
+
+.menu ul ul li a:hover{
+    color: #ffffff66;
+    transition: all .3s;
+}
+
+
+
+
+
+
+
+
+#btn-menu {
+    display: none;
+}
+
 .menu img {
     height: 25px;
-    
+}
+
+/* Parallax Js */
+
+.header-image {
+    min-height: 700px;
+    position: absolute;
+
+}
+
+.header-logo {
+    display: flex;
+    position: absolute;
+    height: 150px;
+    top: 350px;
+    left: 150px;
 }
